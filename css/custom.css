@@ -1,0 +1,60 @@
+/*QUYET THANG EDIT*/
+
+.mega-nav .dropup, .mega-nav .dropright, .mega-nav .dropdown, .dropleft {
+    position: static 
+}
+
+.cz-sidebar, .cz-sidebar-static {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+}
+
+.p-0, .cz-sidebar-body .simplebar-content.p-0, .cz-sidebar-body .simplebar-content {padding:0 !important}
+
+
+
+.pb-grid-gutter, .py-grid-gutter {
+    padding-bottom: 20px !important;
+}
+.mb-grid-gutter, .my-grid-gutter {
+    margin-bottom: 20px !important;
+}
+
+
+.no-show {display:none}
+
+.featured-main-post .bg-trans {
+    position:absolute;left:0; bottom: 40px; background-color: rgba(0, 0, 0, 0.70); padding: 15px 20px;
+}
+.featured-main-post .blog-entry-title a {color: #fff;}
+
+
+.fixed-sidebar #blog-sidebar {background-color: #fff; padding: 30px 20px 30px 0!important; z-index: 99999; position: fixed; top: 0; left: 30px; overflow: auto; width: calc(25% - 30px);; height: 100%;}
+
+.fixed-sidebar .navbar-light .navbar-brand {
+    color: #fe696a;
+    margin-left: calc(20%);
+}
+/* line 4, style-v4.scss */
+::-webkit-scrollbar-track { background-color: #efefef; }
+
+/* line 7, style-v4.scss */
+::-webkit-scrollbar { width: 10px; background-color: #efefef; }
+
+/* line 11, style-v4.scss */
+::-webkit-scrollbar-thumb { background-color: #ccc; }
+
+
+@media (max-width: 991.98px){
+    .cz-sidebar {left: -30rem; transition: left 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s,box-shadow 0.2s 0.2s;}
+    .featured-main-post .bg-trans {position: static!important; padding: 0!important;background: transparent!important;}
+    .featured-main-post .blog-entry-title a {color: #333!important; font-size: 30px!important;}
+    .blog-entry-meta-divider {margin: 0 3px;}
+    .cz-sidebar-body {padding: 0 10px!important;}
+}
+
+
+@media (min-width: 992px){
+    .navbar-expand-lg.navbar {padding: 5px!important;}
+}
