@@ -151,6 +151,23 @@ body a {
     padding: 30px 0 !important;
 }
 
+/*
+    Css for product-categories-carousel
+*/
+.product-categories-carousel {
+
+}
+
+
+/*
+    Css for our-experts-carousel
+*/
+.our-experts-carousel {
+    
+}
+
+
+
 
 @media (max-width: 1024px){
     .cz-sidebar {left: -30rem; transition: left 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s,box-shadow 0.2s 0.2s;}
