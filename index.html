@@ -233,39 +233,54 @@
       </div>
     </div> -->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <div class="header-wrapper navbar-sticky bg-light">
-      <div class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6"><a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0"
-                href="index.html" style="min-width: 7rem;"><img width="142" src="img/logo.png" alt="Cartzilla" /></a>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-              <div class="row contact-header ">
-                <div class="col-md-6">
-                  <p class="ct-hottline"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Hotline:
-                    <span>1900 888</span>
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <p class="ct-email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email:
-                      hocvienkinhdoanhonline@gmail.com</span></p>
-                </div>
-              </div>
-              <input class="form-control appended-form-control" type="text" placeholder="Search for products">
-              <div class="input-group-append-overlay"><span class="input-group-text"><i class="czi-search"></i></span>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-              <div class="row">
-                <div class="col-lg-6 col-md-6"><a href="#" class="btn button-signup"
-                    style="border-radius:4px;"><span>Đăng ký13</span></a></div>
-                <div class="col-lg-6 col-md-6"><a href="#" class="btn button-signin"
-                    style="border-radius:4px;"><span>Đăng nhập</span></a></div>
-              </div>
-            </div>
+    <div class="header-wrapper navbar-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6 header-nav-left">
+            <a href="index.html" style="min-width: 7rem;"><img  src="img/logo.png" alt="Cartzilla" /></a>
           </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-6 col-6 header-nav-right">
+            <div class="contact-header ">
+              <div class="contact-left">
+                <p class="ct-hottline"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Hotline:<span> 1900 888</span>
+                </p>
+              </div>
+              <div class="contact-right">
+                <p class="ct-email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: hocvienkinhdoanhonline@gmail.com</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-6 col-6">
+                <div class="form-search">
+                  <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm">
+                  <select class="search-category">
+                    <option value="volvo">Danh mục tìm kiếm</option>
+                    <option value="saab">Xây dựng thương hiệu</option>
+                    <option value="opel">Xây dựng hệ thống website</option>
+                    <option value="audi">Xây dựng hệ thống chat bot</option>
+                  </select>
+                  <button class="button-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="login">
+                  <a href="#" class="btn button-signup" style="border-radius:4px;"><span>Đăng ký</span></a>
+                  <a href="#" class="btn button-signin" style="border-radius:4px;"><span>Đăng nhập</span></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-6 header-nav-right">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12"><a href="#" class="btn button-signup"
+                  style="border-radius:4px;"><span>Đăng ký13</span></a></div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12"><a href="#" class="btn button-signin"
+                  style="border-radius:4px;"><span>Đăng nhập</span></a></div>
+            </div>
+          </div> -->
         </div>
       </div>
       <div class="header-bottom navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-0">
@@ -366,16 +381,12 @@
                   <!--item-->
                 </ul>
               </li>
-
-
-
-
             </ul>
+
             <!-- Primary menu-->
             <ul class="navbar-nav">
               <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#"
                   data-toggle="dropdown">Giới thiệu</a>
-
               </li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Khóa
                   học</a>
@@ -441,6 +452,9 @@
                   hệ</a>
               </li>
             </ul>
+
+            <!-- header-button-->
+            <div class="header-button"><a href="#" class="btn button-activated" style="border-radius:4px;"><span>Kích hoạt khóa học</span></a></div>
           </div>
         </div>
       </div>
@@ -448,453 +462,924 @@
 
     </div>
   </header>
-  <!-- Page title-->
+
   <!-- Page Content-->
-  <!-- Hero slider-->
+  <!-- Slider-->
   <section class="silder wrapper-section cz-carousel cz-controls-lg mb-4">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-          <div class="cz-carousel-inner">
-            <!-- Item-->
-            <div class="slider1">
-              <div class="banner1"><img class="d-block order-lg-2 mr-lg-n5 flex-shrink-0 lazy" data-src="img/banner.png"
-                  alt="Women Sportswear">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+          <div class="slider-left">
+            <div class="cz-carousel-inner">
+              <!-- banner1-->
+              <div class="slider1">
+                <div class="banner1"><img class="d-block order-lg-2 mr-lg-n5 flex-shrink-0 lazy" data-src="img/banner.png"
+                    alt="Women Sportswear">
+                </div>
               </div>
-            </div>
-            <!-- Item-->
-            <div class="slider2">
-              <div class="banner1"><img class="d-block order-lg-2 mr-lg-n5 flex-shrink-0 lazy" data-src="img/banner.png"
-                  alt="Summer Collection">
+              <!-- banner2-->
+              <div class="slider2">
+                <div class="banner1"><img class="d-block order-lg-2 mr-lg-n5 flex-shrink-0 lazy" data-src="img/banner.png"
+                    alt="Summer Collection">
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-12">
-          <div class="tabbed-content">
-            <ul class="nav nav-outline nav-normal nav-size-large nav-center">
-              <li class="tab has-icon active">
-                <a href="#video"><span>Video</span></a>
-              </li>
-              <li class="tab has-icon">
-                <a href="#su-kien"><span>Sự kiện</span></a>
-              </li>
-              <li class="tab has-icon">
-                <a href="#tin-tuc"><span>Tin tức</span></a>
-              </li>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="tabs-right">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#video" data-toggle="tab" role="tab">
+                  <div class="title-tab d-none d-lg-block">Video</div>
+                </a></li>
+              <li class="nav-item"><a class="nav-link" href="#su-kien" data-toggle="tab" role="tab">
+                  <div class="title-tab d-none d-lg-block">Sự kiên</div>
+                </a></li>
+              <li class="nav-item"><a class="nav-link" href="#tin-tuc" data-toggle="tab" role="tab">
+                  <div class="title-tab d-none d-lg-block">Tin tức</div>
+                </a></li>
             </ul>
-            <div class="tab-panels">
-              <div class="panel entry-content active" id="video">11</div>
-              <div class="panel entry-content" id="su-kien">22</div>
-              <div class="panel entry-content" id="tin-tuc">33</div>
+            <!-- Tab content-->
+            <div class="tab-content">
+              <!-- Video-->
+              <div class="tab-pane fade show active" id="video" role="tabpanel">
+                <div class="list-video">
+                  <ul>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v1.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">Nhiệt liệt chào mừng P.TC Học viện Huệ Nguyễn</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v2.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">Phát động cuộc thi: ”Khoảng khắc đọc sách...</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v3.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">3h thành thạo thiết kế website wordpress</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="wrapper-buton-tab"><a href="#" class="button-video">Xem thêm</a></div>
+              </div>
+              <!-- Sự kiện-->
+              <div class="tab-pane fade show" id="su-kien" role="tabpanel">
+                <div class="list-video">
+                  <ul>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v1.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">Nhiệt liệt chào mừng P.TC Học viện Huệ Nguyễn</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v2.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">Phát động cuộc thi: ”Khoảng khắc đọc sách...</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v3.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">3h thành thạo thiết kế website wordpress</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="wrapper-buton-tab"><a href="#" class="button-video">Xem thêm</a></div>
+              </div>
+              <!-- Tin tức-->
+              <div class="tab-pane fade show" id="tin-tuc" role="tabpanel">
+                <div class="list-video">
+                  <ul>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v1.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">Nhiệt liệt chào mừng P.TC Học viện Huệ Nguyễn</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v2.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">Phát động cuộc thi: ”Khoảng khắc đọc sách...</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tab-ct-left"><img src="./img/v3.png" alt=""></div>
+                      <div class="tab-ct-right">
+                        <p class="title-video"><a href="#">3h thành thạo thiết kế website wordpress</a></p>
+                        <p class="date-video">Ngày đăng: 29/7/2021</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="wrapper-buton-tab"><a href="#" class="button-video">Xem thêm</a></div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
   </section>
+  <!-- Kết thúc Slider-->
 
   <!-- Danh mục khóa học-->
-  <div class="container py-5 my-md-3 product-categories-carousel">
-    <p class="h3 text-center pb-4">Danh mục khóa học</p>
+  <div class="container product-categories-carousel">
+    <p class="main-title text-center">Danh mục khóa học</p>
     <div class="cz-carousel cz-controls-static cz-controls-outside">
       <div class="cz-carousel-inner"
         data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/20.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price"><span class="text-accent">$24.<small>99</small></span></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
-            </div>
+          <div class="card product-card card-static bg-1 icon-block">
+            <img src="./img/Vector.png" alt="">
+            <p class="title-block">Digital Marketing</p>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/21.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$26.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i>
-                </div>
-              </div>
-            </div>
+          <div class="card product-card card-static bg-2 icon-block">
+            <img src="./img/teamwork 1.png" alt="">
+            <p class="title-block">Quản lý nhân sự</p>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/22.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$24.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
-            </div>
+          <div class="card product-card card-static bg-3 icon-block">
+            <img src="./img/2.png" alt="">
+            <p class="title-block">Phát triển bản thân</p>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/23.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$24.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
-            </div>
+          <div class="card product-card card-static bg-4 icon-block">
+            <img src="./img/3.png" alt="">
+            <p class="title-block">Kinh doanh Online</p>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/24.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$25.<small>00</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
-            </div>
+          <div class="card product-card card-static bg-5 icon-block">
+            <img src="./img/home 1.png" alt="">
+            <p class="title-block">Kinh doanh Bất động sản</p>
           </div>
         </div>
+        <!-- Product-->
       </div>
     </div>
+    <div class="wrapper-button"><a href="#" class="button-block">Toàn bộ danh mục</a></div>
   </div>
   <!-- Kết thúc Danh mục khóa học-->
 
   <!-- Đội ngũ chuyên gia-->
   <div class="container py-5 my-md-3 our-experts-carousel">
-    <p class="h3 text-center pb-4">Đội ngũ chuyên gia</p>
+    <p class="main-title text-center">Đội ngũ chuyên gia</p>
     <div class="cz-carousel cz-controls-static cz-controls-outside">
       <div class="cz-carousel-inner"
         data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/20.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price"><span class="text-accent">$24.<small>99</small></span></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/Ellipse 1.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Trần ngọc chuyền</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng hệ thống website</p>
             </div>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/21.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$26.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i>
-                </div>
-              </div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us3.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Nguyễn Thị việt phương</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng hệ thống chat bot</p>
             </div>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/22.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$24.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us3.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Phương hugo</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng đội nhóm</p>
             </div>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/23.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$24.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us4.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Trần ngọc chuyền</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng hệ thống website</p>
             </div>
           </div>
         </div>
         <!-- Product-->
         <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/24.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$25.<small>00</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
-                </div>
-              </div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us5.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Hanh Nguyễn</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng thương hiệu doanh nghiệp</p>
             </div>
           </div>
         </div>
+        <!-- Product-->
       </div>
     </div>
   </div>
   <!-- Kết thúc đội ngũ chuyên gia-->
 
   <!-- Khóa học dành cho bạn-->
-  <div class="container py-5 my-md-3 your-courses">
-    <div class="pt-2 px-4 pl-lg-0 pr-xl-5">
-      <h2 class="h3 py-2 text-center text-sm-left">Khóa học dành cho bạn</h2>
+  <div class="container your-courses">
+      <h2 class="title-section text-center">Khóa học dành cho bạn</h2>
       <!-- Tabs-->
-      <ul class="nav nav-tabs nav-justified" role="tablist">
-        <li class="nav-item"><a class="nav-link px-0 active" href="#profile" data-toggle="tab" role="tab">
-            <div class="d-none d-lg-block"><i class="czi-user opacity-60 mr-2"></i>Profile</div>
-            <div class="d-lg-none text-center"><i class="czi-user opacity-60 d-block font-size-xl mb-2"></i><span
-                class="font-size-ms">Profile</span></div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-items"><a class="nav-link active" href="#tat-ca" data-toggle="tab" role="tab">
+            <div class="title-tab d-none d-lg-block">Tất cả</div>
           </a></li>
-        <li class="nav-item"><a class="nav-link px-0" href="#notifications" data-toggle="tab" role="tab">
-            <div class="d-none d-lg-block"><i class="czi-bell opacity-60 mr-2"></i>Notifications</div>
-            <div class="d-lg-none text-center"><i class="czi-bell opacity-60 d-block font-size-xl mb-2"></i><span
-                class="font-size-ms">Notifications</span></div>
+        <li class="nav-items"><a class="nav-link" href="#tin-hoc-van-phong" data-toggle="tab" role="tab">
+            <div class="title-tab d-none d-lg-block">Tin học văn phòng</div>
           </a></li>
-        <li class="nav-item"><a class="nav-link px-0" href="#payment" data-toggle="tab" role="tab">
-            <div class="d-none d-lg-block"><i class="czi-card opacity-60 mr-2"></i>Payment methods</div>
-            <div class="d-lg-none text-center"><i class="czi-card opacity-60 d-block font-size-xl mb-2"></i><span
-                class="font-size-ms">Payment</span></div>
+        <li class="nav-items"><a class="nav-link" href="#tieng-anh" data-toggle="tab" role="tab">
+            <div class="title-tab d-none d-lg-block">Tiếng anh</div>
           </a></li>
+        <li class="nav-items"><a class="nav-link" href="#thiet-ke" data-toggle="tab" role="tab">
+          <div class="title-tab d-none d-lg-block">Thiết kế</div>
+        </a></li>
+        <li class="nav-items"><a class="nav-link" href="#marketing" data-toggle="tab" role="tab">
+          <div class="title-tab d-none d-lg-block">Marketing</div>
+        </a></li>
       </ul>
       <!-- Tab content-->
       <div class="tab-content">
-        <!-- Profile-->
-        <div class="tab-pane fade show active" id="profile" role="tabpanel">
-          Tab 1
+        <!-- Tất cả-->
+        <div class="tab-pane fade show active" id="tat-ca" role="tabpanel">
+          <div class="row list-product">
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp1.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự động</a>
+                    <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp2.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Phát triển bản thân khó hay dễ</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp3.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh online 2021</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp4.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh Online</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent-free">Free</span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+            </div>
+          </div>
+          <div class="wrapper-button"><a href="#" class="button-block">Xem thêm</a></div>
         </div>
-        <!-- Notifications-->
-        <div class="tab-pane fade" id="notifications" role="tabpanel">
-          Tab 2
+        <!-- Tin học văn phòng-->
+        <div class="tab-pane fade" id="tin-hoc-van-phong" role="tabpanel">
+          <div class="row list-product">
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp1.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự động</a>
+                    <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp2.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Phát triển bản thân khó hay dễ</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp3.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh online 2021</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp4.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh Online</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent-free">Free</span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+            </div>
+          </div>
+          <div class="wrapper-button"><a href="#" class="button-block">Xem thêm</a></div>
         </div>
-        <!-- Payment methods-->
-        <div class="tab-pane fade" id="payment" role="tabpanel">
-          Tab 3
+        <!-- Tiếng anh-->
+        <div class="tab-pane fade" id="tieng-anh" role="tabpanel">
+          <div class="row list-product">
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp1.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự động</a>
+                    <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp2.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Phát triển bản thân khó hay dễ</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp3.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh online 2021</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp4.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh Online</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent-free">Free</span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+            </div>
+          </div>
+          <div class="wrapper-button"><a href="#" class="button-block">Xem thêm</a></div>
+        </div>
+        <!-- Thiết kế-->
+        <div class="tab-pane fade" id="thiet-ke" role="tabpanel">
+          <div class="row list-product">
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp1.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự động</a>
+                    <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp2.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Phát triển bản thân khó hay dễ</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp3.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh online 2021</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp4.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh Online</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent-free">Free</span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+            </div>
+          </div>
+          <div class="wrapper-button"><a href="#" class="button-block">Xem thêm</a></div>
+        </div>
+        <!-- Marketing-->
+        <div class="tab-pane fade" id="marketing" role="tabpanel">
+          <div class="row list-product">
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp1.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự động</a>
+                    <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart active"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp2.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Phát triển bản thân khó hay dễ</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp3.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh online 2021</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product-->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+              <div>
+                <div class="card product-card card-static product-item">
+                  <a class="box-img d-block overflow-hidden"
+                    href="#"><img src="./img/sp4.png" alt="Product"></a>
+                  <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh Online</a>
+                    <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent-free">Free</span></div>
+                      <div class="star-rating">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-heart-o"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+            </div>
+          </div>
+          <div class="wrapper-button"><a href="#" class="button-block">Xem thêm</a></div>
         </div>
       </div>
-    </div>
   </div>
   <!-- Kết thúc Khóa học dành cho bạn-->
 
   <!-- blog học tập-->
-  <div class="container py-5 my-md-3 our-experts-carousel">
-    <p class="h3 text-center pb-4">Blog học tập</p>
-    <div class="cz-carousel cz-controls-static cz-controls-outside">
-      <div class="cz-carousel-inner"
-        data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
-        <!-- Product-->
-        <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/20.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price"><span class="text-accent">$24.<small>99</small></span></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
-                </div>
+  <div class="py-5 my-md-3 blog-learn">
+    <div class="container">
+      <p class="main-title-learn text-center">Blog học tập</p>
+      <div class="cz-carousel cz-controls-static cz-controls-outside">
+        <div class="cz-carousel-inner"
+          data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
+          <!-- Post-->
+          <div>
+            <div class="post-item">
+              <div class="box-img">
+                <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
+              </div>
+              <div class="box-text">
+                <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Product-->
-        <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/21.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$26.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i>
-                </div>
+          <!-- Post-->
+          <div>
+            <div class="post-item">
+              <div class="box-img">
+                <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post2.png" alt="Post"></a>
+              </div>
+              <div class="box-text">
+                <p class="post-title"><a href="#">Làm thế nào để xây dựng thương hiệu các nhân trên internet</a></p>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Product-->
-        <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/22.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$24.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
-                </div>
+          <!-- Post-->
+          <div>
+            <div class="post-item">
+              <div class="box-img">
+                <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post3.png" alt="Post"></a>
+              </div>
+              <div class="box-text">
+                <p class="post-title"><a href="#">Bản đồ kinh doanh online 2021</a></p>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Product-->
-        <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/23.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$24.<small>99</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
-                </div>
+          <!-- Post-->
+          <div>
+            <div class="post-item">
+              <div class="box-img">
+                <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post4.png" alt="Post"></a>
+              </div>
+              <div class="box-text">
+                <p class="post-title"><a href="#">Phát động cuộc thi: “Khoảnh khắc đọc sách của bạn”</a></p>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Product-->
-        <div>
-          <div class="card product-card card-static">
-            <button class="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left"
-              title="Add to wishlist"><i class="czi-heart"></i></button><a class="card-img-top d-block overflow-hidden"
-              href="#"><img src="img/shop/catalog/24.jpg" alt="Product"></a>
-            <div class="card-body py-2"><a class="product-meta d-block font-size-xs pb-1" href="#">Men’s Hoodie</a>
-              <h3 class="product-title font-size-sm"><a href="#">Block-colored Hooded Top</a></h3>
-              <div class="d-flex justify-content-between">
-                <div class="product-price text-accent">$25.<small>00</small></div>
-                <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i
-                    class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
-                </div>
+          <!-- Post-->
+          <div>
+            <div class="post-item">
+              <div class="box-img">
+                <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
+              </div>
+              <div class="box-text">
+                <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
               </div>
             </div>
           </div>
+          <!-- Post-->
         </div>
       </div>
     </div>
   </div>
   <!-- Kết thúc blog học tập-->
 
+  <!-- Cảm nhận học viên-->
+  <div class="container py-5 my-md-3 feedback">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="wrapper-left-img">
+          <img src="./img/img1.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="wrapper-right">
+          <p class="main-title-fb">cảm nhận học viên</p>
+          <p class="fb-description">“Cảm ơn thầy nhiều lắm , mỗi người có 1 cách dạy , cách chia sẻ khác nhau nhưng đều cùng một mục đích chung là nâng cao tư duy , suy nghĩ của mọi người. Những bài học rất hay và hữu ích.”</p>
+          <p class="fb-name">Trần Quyết Thắng</p>
+          <p class="fb-company">(CEO Công ty DISK)</p>
+          <div class="fb-list-item">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12"><img src="./img/fb1.png" alt=""></div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12"><img src="./img/fb2.png" alt=""></div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-12"><img src="./img/fb3.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </div>
+  <!-- Kết thúc cảm nhận học viên-->
 
   <!-- Câu hỏi thường gặp-->
-  <section class="container py-lg-4">
-    <p class="h3 text-center pb-4">Câu hỏi thường gặp</p>
+  <section class="container list-question">
+    <p class="main-title text-center">Câu hỏi thường gặp</p>
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-6"><a
-          class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter" href="#"><img
-            class="d-block mx-auto lazy" data-src="img/shop/brands/01.png" style="width: 150px;" alt="Brand"></a></div>
-      <div class="col-md-3 col-sm-4 col-6"><a
-          class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter" href="#"><img
-            class="d-block mx-auto lazy" data-src="img/shop/brands/06.png" style="width: 150px;" alt="Brand"></a></div>
-      <div class="col-md-3 col-sm-4 col-6"><a
-          class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter" href="#"><img
-            class="d-block mx-auto lazy" data-src="img/shop/brands/07.png" style="width: 150px;" alt="Brand"></a></div>
-      <div class="col-md-3 col-sm-4 col-6"><a
-          class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter" href="#"><img
-            class="d-block mx-auto lazy" data-src="img/shop/brands/08.png" style="width: 150px;" alt="Brand"></a></div>
-
+      <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+        <div class="qt-1">
+          <a href="#">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><p class="title-block">Trợ giúp học viên</p></div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><img src="./img/Group.png" alt=""></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+        <div class="qt-2">
+          <a href="#">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><p class="title-block">Đăng ký giảng viên</p></div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><img src="./img/presentation 1.png" alt=""></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+        <div class="qt-3">
+          <a href="#">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><p class="title-block">Học team doanh nghiệp</p></div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><img src="./img/teamwork 1.png" alt=""></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+        <div class="qt-4">
+          <a href="#">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><p class="title-block">Hướng dẫn thanh toán</p></div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6"><img src="./img/cashless-payment 1.png" alt=""></div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Kết thúc Câu hỏi thường gặp-->
 
   <!-- Các đối tác của học việc KDOL-->
-  <div class="container py-5 my-md-3 our-partners-carousel">
-    <p class="h3 text-center pb-4">Các đối tác của học việc KDOL</p>
+  <div class="container py-5 my-md-3 list-partner">
+    <p class="main-title text-center">Các đối tác của học việc KDOL</p>
     <div class="cz-carousel cz-controls-static cz-controls-outside">
       <div class="cz-carousel-inner"
         data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
         <!-- item-->
-        <div class="col-md-12 "><a class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter"
-            href="#"><img class="d-block mx-auto lazy" data-src="img/shop/brands/01.png" style="width: 150px;"
-              alt="Brand"></a></div>
+        <div class="col-md-12"><img src="./img/p1.png" alt=""></div>
         <!-- end item-->
         <!-- item-->
-        <div class="col-md-12 "><a class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter"
-            href="#"><img class="d-block mx-auto lazy" data-src="img/shop/brands/01.png" style="width: 150px;"
-              alt="Brand"></a></div>
+        <div class="col-md-12"><img src="./img/p2.png" alt=""></div>
         <!-- end item-->
         <!-- item-->
-        <div class="col-md-12 "><a class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter"
-            href="#"><img class="d-block mx-auto lazy" data-src="img/shop/brands/01.png" style="width: 150px;"
-              alt="Brand"></a></div>
+        <div class="col-md-12"><img src="./img/p3.png" alt=""></div>
         <!-- end item-->
         <!-- item-->
-        <div class="col-md-12 "><a class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter"
-            href="#"><img class="d-block mx-auto lazy" data-src="img/shop/brands/01.png" style="width: 150px;"
-              alt="Brand"></a></div>
+        <div class="col-md-12"><img src="./img/p1.png" alt=""></div>
         <!-- end item-->
         <!-- item-->
-        <div class="col-md-12 "><a class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter"
-            href="#"><img class="d-block mx-auto lazy" data-src="img/shop/brands/01.png" style="width: 150px;"
-              alt="Brand"></a></div>
+        <div class="col-md-12"><img src="./img/p4.png" alt=""></div>
         <!-- end item-->
-
       </div>
     </div>
   </div>
@@ -904,98 +1389,129 @@
   <!-- Footer-->
   <footer class="bg-light pt-5">
     <!-- Liên hệ chân trang-->
-    <div class=" footer-contact">
-      <div class="container py-lg-4">
+    <div class="footer-contact">
+      <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-6"><a
-              class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter" href="#"><img
-                class="d-block mx-auto lazy" data-src="img/shop/brands/01.png" style="width: 150px;" alt="Brand"></a>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+              <div class="wrapper-contact">
+                <div class="row">
+                  <div class="col-4 margin-y"><img src="./img/phone.png" alt=""></div>
+                  <div class="col-8 margin-y">
+                    <p class="title-contact">Support 24/7</p>
+                    <p class="contact-number">1900 888</p>
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="col-md-4 col-sm-4 col-6"><a
-              class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter" href="#"><img
-                class="d-block mx-auto lazy" data-src="img/shop/brands/06.png" style="width: 150px;" alt="Brand"></a>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="wrapper-contact">
+              <div class="row">
+                <div class="col-4 margin-y"><img src="./img/phone.png" alt=""></div>
+                <div class="col-8 margin-y">
+                  <p class="title-contact">Tư vấn dịch vụ</p>
+                  <p class="contact-number">(028)1900 888</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 col-sm-4 col-6"><a
-              class="d-block bg-white box-shadow-sm rounded-lg py-3 py-sm-4 mb-grid-gutter" href="#"><img
-                class="d-block mx-auto lazy" data-src="img/shop/brands/07.png" style="width: 150px;" alt="Brand"></a>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="wrapper-contact">
+              <div class="row">
+                <div class="col-4 margin-y"><img src="./img/email.png" alt=""></div>
+                <div class="col-8 margin-y">
+                  <p class="title-contact">Email hỗ trợ</p>
+                  <p class="email-address">hotro@hocvienkdol.com</p>
+                </div>
+              </div>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
     <!-- Kết thúc Liên hệ chân trang-->
-    <div class="container">
-      <div class="row pb-2">
-        <div class="col-md-4 col-sm-6">
-          <div class="widget widget-links widget-light pb-2 mb-4">
-            <p class=" h3 widget-title text-light">Shop departments</p>
-            <ul class="widget-list">
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Sneakers &amp; Athletic</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Athletic Apparel</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Sandals</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Jeans</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Shirts &amp; Tops</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Shorts</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">T-Shirts</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Swimwear</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="widget widget-links widget-light pb-2 mb-4">
-            <p class="h3 widget-title text-light">Account &amp; shipping info</p>
-            <ul class="widget-list">
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Your account</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Shipping rates &amp; policies</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Refunds &amp; replacements</a></li>
-            </ul>
-          </div>
-          <div class="widget widget-links widget-light pb-2 mb-4">
-            <p class="widget-title text-light">About us</p>
-            <ul class="widget-list">
-              <li class="widget-list-item"><a class="widget-list-link" href="#">About company</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Our team</a></li>
-              <li class="widget-list-item"><a class="widget-list-link" href="#">Careers</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="widget pb-2 mb-4">
-            <p class="h3 widget-title text-light pb-1">Stay informed</p>
-            <form class="cz-subscribe-form validate"
-              action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126"
-              method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-              <div class="input-group input-group-overlay flex-nowrap">
-                <div class="input-group-prepend-overlay"><span class="input-group-text text-muted font-size-base"><i
-                      class="czi-mail"></i></span></div>
-                <input class="form-control prepended-form-control" type="email" name="EMAIL" placeholder="Your email"
-                  required>
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="submit" name="subscribe">Subscribe*</button>
-                </div>
+
+    <!-- main footer-->
+    <div class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-logo-ft"><img src="./img/logo-ft.png" alt=""></div>
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footer">Giới thiệu</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Giới thiệu chung</a></li>
+                  <li><a href="#">Dự án cộng đồng</a></li>
+                  <li><a href="#">Đội ngũ giảng viên</a></li>
+                </ul>
               </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input class="cz-subscribe-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126"
-                  tabindex="-1">
-              </div><small class="form-text text-light opacity-50">*Subscribe to our newsletter to receive early
-                discount offers, updates and new products info.</small>
-              <div class="subscribe-status"></div>
-            </form>
-          </div>
-          <div class="widget pb-2 mb-4">
-            <p class="widget-title text-light pb-1">Download our app</p>
-            <div class="d-flex flex-wrap">
-              <div class="mr-2 mb-2"><a class="btn-market btn-apple" href="#" role="button"><span
-                    class="btn-market-subtitle">Download on the</span><span class="btn-market-title">App
-                    Store</span></a></div>
-              <div class="mb-2"><a class="btn-market btn-google" href="#" role="button"><span
-                    class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google
-                    Play</span></a></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">Khóa học online</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Quản trị doanh nghiệp</a></li>
+                  <li><a href="#">Tài chính doanh nghiệp</a></li>
+                  <li><a href="#">Quản trị nhân sự</a></li>
+                  <li><a href="#">Vượt qua khủng hoảng Covid-19</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">Chính sách</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Quyền lợi học viên</a></li>
+                  <li><a href="#">Chính sách thanh toán</a></li>
+                  <li><a href="#">Hướng dẫn thanh toán</a></li>
+                  <li><a href="#">Chính sách affiliate</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">chương trình đối tác</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Trở thành giảng viên</a></li>
+                  <li><a href="#">Công tác viên kinh doanh</a></li>
+                  <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+              </div>
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">chương trình đối tác</p>
+                <ul class="follow-icon">
+                  <li><a href="#"><img src="./img/image 3.png" alt=""></a></li>
+                  <li><a href="#"><img src="./img/image 4.png" alt=""></a></li>
+                  <li><a href="#"><img src="./img/image 5.png" alt=""></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- absolute-footer footer-->
+      <div class="absolute-footer">
+        <div class="container">
+          <div class="coppy-left">
+            <p class="text-no-coppy">Coppyright 2021 HV KDOL. Bản quyền thuộc về Học viện KDOL</p>
+          </div>
+          <div class="coppy-right">
+            <img src="./img/img-bct.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- kết thúc absolute-footer footer-->
+
     </div>
+    <!-- kết thúc main footer-->
+
+    
 
   </footer>
   <!-- Toolbar for handheld devices-->
