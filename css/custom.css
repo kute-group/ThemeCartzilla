@@ -195,6 +195,15 @@
     color: #666666;
 }
 
+.header-wrapper .form-search .search-category option {
+    line-height: 180%;
+}
+
+.header-wrapper .form-search  .search-category:focus-visible {
+    border: 0;
+    outline: none;
+}
+
 .header-wrapper .form-search .search-category:focus-visible {
     border-color: transparent !important;
 }
