@@ -34,6 +34,19 @@
     color: #FFFC01;
     margin-left: calc(20%);
 }
+
+.text-bold {
+    font-weight: bold !important;
+}
+
+.product-small {
+    padding-bottom: 30px;
+}
+
+.main-color {
+    color: #0046AF !important;
+}
+
 /* line 4, style-v4.scss */
 ::-webkit-scrollbar-track { background-color: #efefef; }
 
@@ -700,6 +713,7 @@
 
 .your-courses .box-img {
     height: 150px;
+    overflow: hidden;
     border-radius: 8px;
     width: 100%;
     background-color: #fff;
@@ -1076,7 +1090,842 @@
     float: right;
 }
 
+/*
+    Css for breadcrumbs
+*/
+.breadcrumbs {
+    height: 50px;
+    background-color: #F4F4F4;
+    line-height: 50px;
+}
 
+.breadcrumbs .divider {
+    margin: 0 .3em;
+}
+
+.breadcrumbs .content-breadcrumbs a {
+    color: #666666;
+}
+
+/*
+    Css for fillter
+*/
+.fillter {
+    padding: 30px 0 0 0;
+}
+
+.fillter .content-fillter {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.fillter .main-title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #000;
+    margin-top: 35px;
+}
+
+.fillter .property-fillter {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+/*
+    Css for courses-online
+*/
+.courses-online {
+    margin-top: 30px;
+}
+
+.courses-online .list-product {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.courses-online .product-item {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+/*
+    Css for navigation
+*/
+.navigation {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.navigation ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li{
+    list-style: none;
+    float: left;
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.navigation ul li .button-navigation{
+    background: #FFFFFF;
+    border: 2px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.navigation ul li .button-navigation.active{
+    background: linear-gradient(211.57deg, #004EC2 19.03%, #003483 83.73%);
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navigation ul li:hover .button-navigation{
+    background: linear-gradient(211.57deg, #004EC2 19.03%, #003483 83.73%);
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*
+    Css for section-accordion
+*/
+.section-accordion {
+    overflow: hidden;
+    padding-top: 40px;
+}
+.section-accordion .accordion .accordion-heading {
+    margin-bottom: 0;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+.section-accordion .accordion .accordion-heading>a {
+    padding: 1.09375rem 1.25rem 0 1.25rem;
+}
+
+.section-accordion .card {
+    border: 2px solid rgba(0,0,0,0.085);
+}
+ 
+.section-accordion .sub-accordion-heading {
+    padding: 0 5rem 0 1.25rem;
+}
+
+/*
+    Css for single-product
+*/
+.single-product {
+    padding: 30px 0;
+}
+
+.single-product .product-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.single-product .product-short-description p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    margin: 30px 0;
+}
+
+.single-product .author {
+
+}
+
+.single-product .author .box-avatar img{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 99px;
+}
+
+.single-product .author .box-avatar{
+    float: left;
+}
+
+.single-product .author .box-text{
+    float: left;
+    padding: 12px 0 0 10px;
+}
+
+.single-product .author-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.single-product .author-company {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    margin-bottom: 0;
+}
+
+.star-rating .fa-heart.active {
+    color: #D32C2C;
+}
+
+.single-product .product-info .fb-left {
+    padding-top: 25px;
+}
+
+.single-product .product-info .fb-left .star-rating {
+    float: left;
+}
+
+.single-product .product-info .fb-left .comment-form-rating {
+    float: right;
+    padding-left: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.single-product .product-info .member-right {
+    padding-top: 25px;
+}
+
+.single-product .product-info .member-right .number-member {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.single-product .product-info .member-right .number-member i {
+    padding-right: 10px;
+}
+
+.single-product .review-form-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.single-product .review-form-wrapper li{
+    list-style: none;
+    float: left;
+    padding: 0 15px;
+}
+
+.single-product .entry-image {
+    padding: 40px 0 15px 0;
+}
+
+.single-product .entry-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.single-product .product-footer .nav-item {
+    width: 25%;
+    text-align: center;
+}
+
+.single-product .product-footer .nav-tabs {
+    border-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.single-product .product-footer .nav-tabs .nav-link.active{
+    color: #fff !important;
+    background: linear-gradient(
+211.57deg
+, #0052CC 19.03%, #002C6D 83.73%);
+    border-color: #0052CC;
+}
+
+.single-product .product-footer .nav-item:hover .nav-link {
+    background: linear-gradient(
+211.57deg
+, #0052CC 19.03%, #002C6D 83.73%);
+    color: #fff !important;
+}
+
+.single-product .product-footer .nav-link {
+    text-align: center;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.single-product .product-footer .nav-tabs .nav-link.active::before {
+    background-color:transparent;
+}
+
+.single-product .product-footer .description-tab {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    min-height: 225px;
+    border: 2px solid #EEEEEE;
+}
+
+/*
+    Css for add-to-cart
+*/
+.add-to-cart {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.add-to-cart .price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 35px;
+    color: #0046AF;
+    margin-bottom: 5px;
+}
+
+.add-to-cart .price-sale {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: line-through;
+    color: #666666;
+    padding-left: 10px;
+}
+
+.add-to-cart .des-product {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D32C2C;
+    margin-bottom: 25px;
+}
+
+.add-to-cart .single_add_button_learn{
+    width: 100%;
+    background: linear-gradient(
+211.57deg
+, #004EC2 19.03%, #003483 83.73%);
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart .single_add_to_cart_button{
+    width: 100%;
+    margin-bottom: 10px;
+    background: #E15201;
+    border-radius: 6px;
+    border: 0;
+    padding: 7px 10px;
+    color: #fff;
+}
+
+.add-to-cart .des-short-product {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.add-to-cart .add-to-cart-meta {
+    margin-bottom: 30px;
+}
+
+.add-to-cart .add-to-cart-meta ul{
+    padding: 0;
+    margin: 0;
+}
+
+.add-to-cart .add-to-cart-meta ul li{
+    list-style: none;
+    padding: 3px 0;
+}
+
+.add-to-cart .add-to-cart-meta ul li i{
+    min-width: 20px;
+}
+
+.add-to-cart .add-to-code{
+    overflow: hidden;
+    width: 100%;
+}
+
+.add-to-cart .add-to-code .input-left {
+    width: 70%;
+    float: left;
+    padding-right: 2px;
+}
+
+.add-to-cart .add-to-code .submit-right {
+    width: 30%;
+    float: right;
+    padding-left: 2px;
+}
+
+.add-to-cart .add-to-code .input-left input{
+    background: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+
+.add-to-cart .add-to-code .submit-right .button-add-to-code{
+    border: 0;
+    height: 35px;
+    background: linear-gradient(
+211.57deg
+, #004EC2 19.03%, #003483 83.73%);
+    border-radius: 6px;
+    color: #fff;
+    width: 100%;
+}
+
+/*
+    Css for footer-product
+*/
+.related-products {
+    padding-top: 40px;
+}
+
+.related-products .title-related-products {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.related-products .title-related-products::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #DDDDDD;
+    margin-top: 15px;
+}
+
+.related-products .product-item {
+    background-color: #fff;
+    border: 8px;
+}
+
+.related-products .box-img {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.related-products .product-item .box-text {
+    padding: 15px 0;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.related-products .product-item .product-meta {
+    font-size: 14px !important;
+    color: #0046AF;
+}
+
+.related-products .product-item .product-title {
+    font-weight: bold;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.related-products .product-item .text-accent {
+    background: linear-gradient( 
+211.57deg
+ , #004EC2 19.03%, #003483 83.73%);
+    border-radius: 6px;
+    padding: 5px 15px;
+    color: #fff !important;
+}
+
+.related-products .product-item .star-rating {
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+.related-products .product-item .text-accent-free {
+    background: linear-gradient( 
+211.57deg
+ , #00C2C2 19.03%, #007B83 83.73%);
+    border-radius: 6px;
+    padding: 5px 15px;
+    color: #fff !important;
+}
+
+.related-products .related-courses {
+    padding-bottom: 50px;
+}
+
+.related-products .related-posts {
+    padding-bottom: 30px;
+}
+
+.post-item .box-img .card-img-top {
+    height: 155px;
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.post-item .box-text {
+    padding: 10px 0;
+}
+
+.post-item .box-text .post-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 3em;
+}
+
+.post-item .box-text .post-title a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.related-posts .box-text .post-title a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/*
+    Css for list-our-experts-carousel
+*/
+.list-our-experts-carousel {
+    padding: 40px 0;
+}
+
+.list-our-experts-carousel .product-small {
+    padding-bottom: 50px;
+}
+
+/*
+    Css for registration-teacher
+*/
+.registration-teacher {
+    margin-bottom: 20px;
+}
+
+.registration-teacher .form-registration {
+    border: 2px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.registration-teacher .registration-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0046AF;
+}
+
+.registration-teacher .button-registration{
+    background: linear-gradient(
+211.57deg
+, #0052CC 19.03%, #002C6D 83.73%);
+    border-radius: 6px;
+    border: 0;
+    padding: 10px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: auto;
+    display: block;
+}
+
+/*
+    Css for header-info-teacher
+*/
+.header-info-teacher {
+    background-color: #fff;
+}
+
+.header-info-teacher .teacher-info{
+    padding: 30px 0;
+}
+
+.header-info-teacher .teacher-info .box-avatar {
+    float: left;
+}
+
+.header-info-teacher .teacher-info .box-avatar img {
+    width:120px;
+    height:120px;
+    overflow: hidden;
+    border-radius: 99px;
+}
+
+.header-info-teacher .teacher-info .box-text {
+    float: left;
+    padding: 45px 0 0 10px;
+}
+
+.header-info-teacher .teacher-info .teacher-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.header-info-teacher .teacher-info .teacher-company {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.header-info-teacher .teacher-info .follow-button{
+    border: 2px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: transparent;
+    padding: 2px 10px;
+    margin-right: 5px;
+}
+
+.header-info-teacher .teacher-info .follow-button:hover{
+    border: 2px solid transparent;
+    background: linear-gradient(211.57deg, #004EC2 19.03%, #003483 83.73%);
+    padding: 2px 10px;
+    color: #fff;
+}
+
+.header-info-teacher .teacher-info .statis-teacher {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header-info-teacher .teacher-info .statis-teacher .statis-number{
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 73px;
+    color: #0046AF;
+    margin-bottom: 0;
+}
+
+/*
+    Css for main-info-teacher
+*/
+.main-info-teacher {
+    background-color: #E5E5E5;
+}
+
+.main-info-teacher .content-main-info-teacher{
+    padding: 30px 0;
+}
+
+.main-info-teacher .content-main-info-teacher .introduce-teacher-text{
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 15px;
+    min-height: 337px;
+}
+
+.main-info-teacher .content-main-info-teacher .introduce-teacher {
+    padding-bottom: 40px;
+}
+
+.main-info-teacher .introduce-teacher-text .title-introduce {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.main-info-teacher .content-main-info-teacher .introduce-teacher-img {
+    border-radius: 6px;
+}
+
+.main-info-teacher .content-main-info-teacher .introduce-teacher-img img{
+    border-radius: 6px;
+}
+
+/*
+    Css for course-from-teacher
+*/
+.course-from-teacher {
+
+}
+
+.course-from-teacher .course-name-teacher{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.course-from-teacher .list-course {
+    padding: 0;
+    margin: 0;
+}
+
+.course-from-teacher .list-course li{
+    list-style: none;
+}
+
+.course-from-teacher .list-course li+li{
+    padding: 30px 0;
+}
+
+.course-from-teacher .course-item {
+    background: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.course-from-teacher .info-course .title-course {
+    margin-bottom: 5px;
+}
+
+.course-from-teacher .info-course .title-course a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.course-from-teacher .info-course .title-course:hover a {
+    color: #0046AF;
+}
+
+.course-from-teacher .info-course .course-meta {
+    width: 100%;
+}
+
+.course-from-teacher .info-course .course-meta {
+    width: 100%;
+    display: flex
+}
+
+.course-from-teacher .info-course .course-meta .course-meta-date {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #333333;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.course-from-teacher .info-course .course-meta .course-meta-chapter {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.course-from-teacher .price-wrapper .price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 35px;
+    color: #0046AF;
+    margin-bottom: 5px;
+}
+
+.course-from-teacher .price-wrapper .price-sale {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: line-through;
+    color: #666666;
+    padding-left: 10px;
+}
+
+.course-from-teacher .price-wrapper .des-product {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D32C2C;
+    margin-bottom: 25px;
+}
+
+.course-from-teacher .read-more {
+    background: linear-gradient(
+211.57deg
+, #004EC2 19.03%, #003483 83.73%);
+    border-radius: 6px;
+    border: 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.course-from-teacher .read-more:hover{
+    background: linear-gradient(211.57deg, #0044AA 19.03%, #002762 83.73%);
+}
+
+.course-from-teacher .read-more a{
+    color: #fff;
+}
+
+.course-from-teacher .course-item .course-description {
+    margin-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 63px;
+    color: #424242;
+}
 
 
 
