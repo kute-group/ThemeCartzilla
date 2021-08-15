@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <!-- ========== Meta Tags ========== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html" ; />
+  <meta http-equiv="content-language" content="vi">
+
+  <link rel="alternate" hreflang="vi" href="https://api.vdisk.vn/" />
+  <link rel="alternate" href="https://api.vdisk.vn/" hreflang="x-default" />
+
+  <!-- ========== Page Title ========== -->
+  <title>Học lập trình và khoa học dữ liệu trực tuyến</title>
+  <meta name="description" content="Học lập trình và khoa học dữ liệu trực tuyến" />
+  <meta name="keywords" content="bootstrap, shop, e-commerce">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="http://shop.vdisk.vn/" />
+
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" hreflang="vi" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" hreflang="vi" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="manifest" hreflang="vi" href="site.webmanifest">
+  <link rel="mask-icon" hreflang="vi" color="#fe6a6a" href="safari-pinned-tab.svg">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph protocol & Twitter Card -->
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Học lập trình và khoa học dữ liệu trực tuyến" />
+  <meta property="og:description" content="Học lập trình và khoa học dữ liệu trực tuyến" />
+  <meta property="og:url" content="https://api.vdisk.vn/" />
+  <meta property="og:site_name" content="DISK VIETNAM" />
+  <meta property="article:author" content="https://www.facebook.com/Vincentdoseo" />
+  <meta property="article:modified_time" content="2020-10-20T02:35:20+00:00" />
+  <meta property="og:image" content="https://api.vdisk.vn/wp-content/uploads/2020/02/seo-la-gi.jpg" />
+
+  <script src="https://use.fontawesome.com/22e83c7ba5.js"></script>
+  <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+  <!--<link rel="stylesheet" hreflang="vi" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>-->
+  <link rel="stylesheet" hreflang="vi" href="vendor/tiny-slider/dist/tiny-slider.css" rel="preload" />
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" hreflang="vi" href="css/theme.min.css" rel="preload">
+  <link rel="stylesheet" hreflang="vi" href="css/custom.css" rel="preload">
+
+</head>
+<!-- Body-->
+
+<body class="toolbar-enabled">
+  <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <ul class="nav nav-tabs card-header-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link active" href="#signin-tab" data-toggle="tab" role="tab"
+                aria-selected="true"><i class="czi-unlocked mr-2 mt-n1"></i>Sign in</a></li>
+            <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab"
+                aria-selected="false"><i class="czi-user mr-2 mt-n1"></i>Sign up</a></li>
+          </ul>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body tab-content py-4">
+          <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+            <div class="form-group">
+              <label for="si-email">Email address</label>
+              <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+              <div class="invalid-feedback">Please provide a valid email address.</div>
+            </div>
+            <div class="form-group">
+              <label for="si-password">Password</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="si-password" required>
+                <label class="password-toggle-btn">
+                  <input class="custom-control-input" type="checkbox"><i
+                    class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group d-flex flex-wrap justify-content-between">
+              <div class="custom-control custom-checkbox mb-2">
+                <input class="custom-control-input" type="checkbox" id="si-remember">
+                <label class="custom-control-label" for="si-remember">Remember me</label>
+              </div><a class="font-size-sm" href="#">Forgot password?</a>
+            </div>
+            <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign in</button>
+          </form>
+          <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+            <div class="form-group">
+              <label for="su-name">Full name</label>
+              <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+              <div class="invalid-feedback">Please fill in your name.</div>
+            </div>
+            <div class="form-group">
+              <label for="su-email">Email address</label>
+              <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+              <div class="invalid-feedback">Please provide a valid email address.</div>
+            </div>
+            <div class="form-group">
+              <label for="su-password">Password</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="su-password" required>
+                <label class="password-toggle-btn">
+                  <input class="custom-control-input" type="checkbox"><i
+                    class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="su-password-confirm">Confirm password</label>
+              <div class="password-toggle">
+                <input class="form-control" type="password" id="su-password-confirm" required>
+                <label class="password-toggle-btn">
+                  <input class="custom-control-input" type="checkbox"><i
+                    class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar-->
+  <!-- Navbar 3 Level (Light)-->
+  <header class="box-shadow-sm">
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <div class="header-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6 header-nav-left">
+            <a href="index.html" style="min-width: 7rem;"><img src="img/logo.png" alt="Cartzilla" /></a>
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-6 col-6 header-nav-right">
+            <div class="contact-header ">
+              <div class="contact-left">
+                <p class="ct-hottline"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Hotline:<span> 1900
+                    888</span>
+                </p>
+              </div>
+              <div class="contact-right">
+                <p class="ct-email"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email:
+                    hocvienkinhdoanhonline@gmail.com</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-6 col-6">
+                <div class="form-search">
+                  <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm">
+                  <select class="search-category">
+                    <option value="volvo">Danh mục tìm kiếm</option>
+                    <option value="saab">Xây dựng thương hiệu</option>
+                    <option value="opel">Xây dựng hệ thống website</option>
+                    <option value="audi">Xây dựng hệ thống chat bot</option>
+                  </select>
+                  <button class="button-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+
+                <!-- Login-->
+                <!-- <div class="login">
+                  <a href="#" class="btn button-signup" style="border-radius:4px;"><span>Đăng ký</span></a>
+                  <a href="#" class="btn button-signin" style="border-radius:4px;"><span>Đăng nhập</span></a>
+                </div> -->
+
+                <!-- Logged-->
+                <div class="logged">
+                  <div class="box-avatar">
+                    <img src="./img/tk.png" alt="">
+                  </div>
+                  <div class="box-name">
+                    <p class="messenger">Xin chào</p>
+                    <p class="user-name">Thắng Trần</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-0">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- Search-->
+            <div class="input-group-overlay d-lg-none my-3">
+              <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="czi-search"></i></span>
+              </div>
+              <input class="form-control prepended-form-control" type="text" placeholder="Search for products">
+            </div>
+
+            <!-- Departments menu-->
+            <ul class="navbar-nav mega-nav">
+              <li class="nav-item dropdown">
+
+                <a class="mega-menu-wrap nav-link dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-bars"
+                    aria-hidden="true"></i> DANH MỤC KHÓA HỌC</a>
+                <ul class="dropdown-menu pt-0">
+                  <!--item-->
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                      <i class="czi-book text-heading mr-2"></i> Khóa học hán hàng
+                    </a>
+                    <!-- <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Navbar
+                      Variants</a> -->
+                    <div class="dropdown-menu pt-0">
+                      <div class="d-flex flex-wrap flex-md-nowrap">
+                        <div class="mega-dropdown-column pt-4 px-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-lg mb-3"
+                              href="#"><img src="img/shop/departments/01.jpg" alt="Shoes"></a>
+                            <h6 class="font-size-base mb-2">Clothing</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Women's clothing</a>
+                              </li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Men's clothing</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-lg mb-3"
+                              href="#"><img src="img/shop/departments/02.jpg" alt="Shoes"></a>
+                            <h6 class="font-size-base mb-2">Shoes</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Women's shoes</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Men's shoes</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-lg mb-3"
+                              href="#"><img src="img/shop/departments/03.jpg" alt="Shoes"></a>
+                            <h6 class="font-size-base mb-2">Gadgets</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Smartphones &amp;
+                                  Tablets</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Wearable gadgets</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap flex-md-nowrap">
+                        <div class="mega-dropdown-column pt-4 px-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-lg mb-3"
+                              href="#"><img src="img/shop/departments/04.jpg" alt="Shoes"></a>
+                            <h6 class="font-size-base mb-2">Furniture &amp; Decor</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Home furniture</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Office furniture</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-lg mb-3"
+                              href="#"><img src="img/shop/departments/05.jpg" alt="Shoes"></a>
+                            <h6 class="font-size-base mb-2">Accessories</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Hats</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Sunglasses</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-lg mb-3"
+                              href="#"><img src="img/shop/departments/06.jpg" alt="Shoes"></a>
+                            <h6 class="font-size-base mb-2">Entertainment</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Kid's toys</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="#">Video games</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!--item-->
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Primary menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#"
+                  data-toggle="dropdown">Giới thiệu</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Khóa
+                  học</a>
+                <div class="dropdown-menu p-0">
+                  <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                    <div class="mega-dropdown-column py-4 px-3">
+                      <div class="widget widget-links mb-3">
+                        <h4 class="font-size-base mb-3">Shop layouts</h4>
+                        <ul class="widget-list">
+                          <li class="widget-list-item pb-1"><a class="widget-list-link" href="shop-grid-ls.html">Shop
+                              Grid - Left Sidebar</a></li>
+                          <li class="widget-list-item pb-1"><a class="widget-list-link" href="shop-grid-rs.html">Shop
+                              Grid - Right Sidebar</a></li>
+                          <li class="widget-list-item pb-1"><a class="widget-list-link" href="shop-grid-ft.html">Shop
+                              Grid - Filters on Top</a></li>
+                          <li class="widget-list-item pb-1"><a class="widget-list-link" href="shop-list-ls.html">Shop
+                              List - Left Sidebar</a></li>
+                          <li class="widget-list-item pb-1"><a class="widget-list-link" href="shop-list-rs.html">Shop
+                              List - Right Sidebar</a></li>
+                          <li class="widget-list-item pb-1"><a class="widget-list-link" href="shop-list-ft.html">Shop
+                              List - Filters on Top</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog
+                  chia sẻ</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Shop
+                      User Account</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="account-orders.html">Orders History</a></li>
+                      <li><a class="dropdown-item" href="account-profile.html">Profile Settings</a></li>
+                      <li><a class="dropdown-item" href="account-address.html">Account Addresses</a></li>
+                      <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                      <li><a class="dropdown-item" href="account-wishlist.html">Wishlist</a></li>
+                      <li><a class="dropdown-item" href="account-tickets.html">My Tickets</a></li>
+                      <li><a class="dropdown-item" href="account-single-ticket.html">Single Ticket</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Vendor
+                      Dashboard</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="dashboard-settings.html">Settings</a></li>
+                      <li><a class="dropdown-item" href="dashboard-purchases.html">Purchases</a></li>
+                      <li><a class="dropdown-item" href="dashboard-favorites.html">Favorites</a></li>
+                      <li><a class="dropdown-item" href="dashboard-sales.html">Sales</a></li>
+                      <li><a class="dropdown-item" href="dashboard-products.html">Products</a></li>
+                      <li><a class="dropdown-item" href="dashboard-add-new-product.html">Add New Product</a></li>
+                      <li><a class="dropdown-item" href="dashboard-payouts.html">Payouts</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="account-signin.html">Sign In / Sign Up</a></li>
+                  <li><a class="dropdown-item" href="account-password-recovery.html">Password Recovery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Hướng
+                  dẫn</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Liên
+                  hệ</a>
+              </li>
+            </ul>
+
+            <!-- header-button-->
+            <div class="header-button"><a href="#" class="btn button-activated" style="border-radius:4px;"><span>Kích
+                  hoạt khóa học</span></a></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+  <!-- Page Content-->
+
+  
+  <!-- Đội ngũ chuyên gia-->
+  <div class="container py-5 my-md-3 our-experts-carousel">
+    <p class="main-title text-center">Đội ngũ chuyên gia</p>
+    <div class="cz-carousel cz-controls-static cz-controls-outside">
+      <div class="cz-carousel-inner"
+        data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
+        <!-- Item-->
+        <div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/Ellipse 1.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Trần ngọc chuyền</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng hệ thống website</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us3.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Nguyễn Thị việt phương</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng hệ thống chat bot</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us3.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Phương hugo</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng đội nhóm</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us4.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Trần ngọc chuyền</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng hệ thống website</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div>
+          <div class="card product-card card-static item-team">
+            <img src="./img/us5.png" alt="">
+            <div class="wrapper-description">
+              <p class="us-name">Hanh Nguyễn</p>
+              <p class="us-company">(học viện kdol)</p>
+              <p class="us-description">Chuyên gia xây dựng thương hiệu doanh nghiệp</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+      </div>
+    </div>
+  </div>
+  <!-- Kết thúc đội ngũ chuyên gia-->
+
+  <!-- Footer-->
+  <footer class="bg-light pt-5">
+    <!-- Liên hệ chân trang-->
+    <div class="footer-contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="wrapper-contact">
+              <div class="row">
+                <div class="col-4 margin-y"><img src="./img/phone.png" alt=""></div>
+                <div class="col-8 margin-y">
+                  <p class="title-contact">Support 24/7</p>
+                  <p class="contact-number">1900 888</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="wrapper-contact">
+              <div class="row">
+                <div class="col-4 margin-y"><img src="./img/phone.png" alt=""></div>
+                <div class="col-8 margin-y">
+                  <p class="title-contact">Tư vấn dịch vụ</p>
+                  <p class="contact-number">(028)1900 888</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="wrapper-contact">
+              <div class="row">
+                <div class="col-4 margin-y"><img src="./img/email.png" alt=""></div>
+                <div class="col-8 margin-y">
+                  <p class="title-contact">Email hỗ trợ</p>
+                  <p class="email-address">hotro@hocvienkdol.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Kết thúc Liên hệ chân trang-->
+
+    <!-- main footer-->
+    <div class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-logo-ft"><img src="./img/logo-ft.png" alt=""></div>
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footer">Giới thiệu</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Giới thiệu chung</a></li>
+                  <li><a href="#">Dự án cộng đồng</a></li>
+                  <li><a href="#">Đội ngũ giảng viên</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">Khóa học online</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Quản trị doanh nghiệp</a></li>
+                  <li><a href="#">Tài chính doanh nghiệp</a></li>
+                  <li><a href="#">Quản trị nhân sự</a></li>
+                  <li><a href="#">Vượt qua khủng hoảng Covid-19</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">Chính sách</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Quyền lợi học viên</a></li>
+                  <li><a href="#">Chính sách thanh toán</a></li>
+                  <li><a href="#">Hướng dẫn thanh toán</a></li>
+                  <li><a href="#">Chính sách affiliate</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">chương trình đối tác</p>
+                <ul class="menu-footer">
+                  <li><a href="#">Trở thành giảng viên</a></li>
+                  <li><a href="#">Công tác viên kinh doanh</a></li>
+                  <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+              </div>
+              <div class="wrapper-menu-footer">
+                <p class="title-menu-footers">chương trình đối tác</p>
+                <ul class="follow-icon">
+                  <li><a href="#"><img src="./img/image 3.png" alt=""></a></li>
+                  <li><a href="#"><img src="./img/image 4.png" alt=""></a></li>
+                  <li><a href="#"><img src="./img/image 5.png" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- absolute-footer footer-->
+      <div class="absolute-footer">
+        <div class="container">
+          <div class="coppy-left">
+            <p class="text-no-coppy">Coppyright 2021 HV KDOL. Bản quyền thuộc về Học viện KDOL</p>
+          </div>
+          <div class="coppy-right">
+            <img src="./img/img-bct.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- kết thúc absolute-footer footer-->
+
+    </div>
+    <!-- kết thúc main footer-->
+
+
+
+  </footer>
+  <!-- Toolbar for handheld devices-->
+  <div class="cz-handheld-toolbar">
+    <div class="d-table table-fixed w-100"><a class="d-table-cell cz-handheld-toolbar-item"
+        href="account-wishlist.html"><span class="cz-handheld-toolbar-icon"><i class="czi-heart"></i></span><span
+          class="cz-handheld-toolbar-label">Wishlist</span></a><a class="d-table-cell cz-handheld-toolbar-item"
+        href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)"><span
+          class="cz-handheld-toolbar-icon"><i class="czi-menu"></i></span><span
+          class="cz-handheld-toolbar-label">Menu</span></a><a class="d-table-cell cz-handheld-toolbar-item"
+        href="shop-cart.html"><span class="cz-handheld-toolbar-icon"><i class="czi-cart"></i><span
+            class="badge badge-primary badge-pill ml-1">4</span></span><span
+          class="cz-handheld-toolbar-label">$265.00</span></a>
+    </div>
+  </div>
+  <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span
+      class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon czi-arrow-up">
+    </i></a>
+  <!-- <script src="assets/js/main.js"></script> -->
+  <!-- Vendor scrits: js libraries and plugins-->
+  <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+  <!--  <script src="vendor/simplebar/dist/simplebar.min.js"></script> -->
+  <script src="vendor/tiny-slider/dist/min/tiny-slider.js" async></script>
+  <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js" async></script>
+
+
+  <!-- Lazy loading image lib -->
+  <script type="text/javascript" src="vendor/lazy-loading/jquery.lazy.min.js" async></script>
+
+
+
+
+  <!-- Setup Lazy loading image -->
+  <script>
+    $(function () {
+      $('.lazy').Lazy({
+
+        customLoaderName: function (element) {
+          element.html('element handled by "customLoaderName"');
+          element.load();
+        },
+        asyncLoader: function (element, response) {
+          setTimeout(function () {
+            element.html('element handled by "asyncLoader"');
+            response(true);
+          }, 1000);
+        }
+      });
+    });
+  </script>
+
+  <!-- Main theme script-->
+  <script src="js/theme.min.js" async></script>
+</body>
+
+</html>
