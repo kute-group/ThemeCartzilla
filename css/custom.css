@@ -77,6 +77,18 @@
     display: block;
 }
 
+.cz-carousel.cz-controls-outside {
+    padding: 0;
+}
+
+.cz-carousel.cz-controls-outside [data-controls='prev'] {
+    left: -1.7em;
+}
+
+.cz-carousel.cz-controls-outside [data-controls='next'] {
+    right: -1.7em;
+}
+
 /* line 4, style-v4.scss */
 ::-webkit-scrollbar-track { background-color: #efefef; }
 
@@ -395,6 +407,13 @@
     line-height: 21px;
     color: #FFFFFF;
     margin-bottom: 0;
+}
+
+/*
+    Css for silder
+*/
+.silder {
+    margin-bottom: 30px;
 }
 
 /*
@@ -1442,6 +1461,41 @@
     border: 2px solid #EEEEEE;
 }
 
+.single-product .product-footer .description-tab .chapter-item {
+    padding: 0 15px;
+}
+
+.single-product .product-footer .description-tab .chapter-item.active {
+    padding: 10px 15px;
+    background: #EEEEEE;
+    border-radius: 6px;
+}
+
+.single-product .product-footer .description-tab .chapter-item .chapter-name {
+    min-width: 75%;
+}
+
+.single-product .chapter-item .review-form-wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.single-product .chapter-item .review-form-wrapper li {
+    list-style: none;
+    float: left;
+    padding-right: 15px;
+}
+
+.single-product .chapter-item .fb-left {
+    padding-top: 15px;
+}
+
+.single-product .chapter-item .member-right {
+    padding-top: 15px;
+}
+
 /*
     Css for add-to-cart
 */
@@ -2166,6 +2220,12 @@
 
     .list-question .title-block {
         font-size: 16px;
+        text-align: center;
+        min-height: 40px;
+    }
+
+    .list-question img {
+        margin-top: 0;
     }
 
     .footer-contact .wrapper-contact .title-contact {
@@ -2191,6 +2251,13 @@
     .single-product .review-form-wrapper {
         display: block;
         justify-content: flex-end;
+    }
+
+    .single-product .chapter-item .review-form-wrapper {
+        padding: 0;
+        margin: 0;
+        display: block;
+        justify-content: flex-start;
     }
 
     .single-product .product-info .fb-left {
@@ -2308,6 +2375,31 @@
     .single-product .product-footer .nav-link {
         padding: 10px;
     }
+
+    .tabs-right .list-video ul li .tab-ct-left {
+        width: 40%;
+    }
+
+    .tabs-right .list-video ul li .tab-ct-right {
+        width: 60%;
+    }
+
+    .silder {
+        margin-bottom: 0;
+    }
+
+    .blog-learn {
+        margin-top: 25px !important;
+    }
+
+    .list-our-experts-carousel .product-small {
+        padding-bottom: 30px;
+    }
+
+    .your-courses .product-meta {
+        font-size: 12px !important;
+        color: #0046AF;
+    }
 }
 
 
@@ -2367,7 +2459,7 @@
 
     .list-product {
         overflow: hidden;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .post-item .box-img .card-img-top {
@@ -2406,5 +2498,46 @@
     .absolute-footer .coppy-right img{
         margin: auto;
         display: block;
+    }
+
+    .cz-carousel .tns-controls{
+        display: block;
+    }
+    
+    .d-flex {
+        display: block !important;
+    }
+
+    .pb-5, .py-5 {
+        padding-bottom: 1rem !important;
+    }
+
+    .your-courses {
+        padding-top: 25px;
+    }
+
+    .pt-5{
+        padding-top: 2rem !important;
+    }
+
+    .main-footer .footer-content {
+        padding: 20px 0 20px 0;
+    }
+
+    .our-experts-carousel .us-name {
+        min-height: 40px;
+    }
+
+    .cz-carousel.cz-controls-outside [data-controls='prev'] {
+        left: 0;
+    }
+    
+    .cz-carousel.cz-controls-outside [data-controls='next'] {
+        right: 0;
+    }
+
+    .courses-online .product-item {
+        padding-bottom: 15px;
+        margin-bottom: 0px;
     }
 }
