@@ -35,6 +35,11 @@
     margin-left: calc(20%);
 }
 
+.sidebar-fixed {
+    position: fixed;
+    top: 110px;
+}
+
 .text-bold {
     font-weight: bold !important;
 }
@@ -89,6 +94,8 @@
     right: -1.7em;
 }
 
+
+
 /* line 4, style-v4.scss */
 ::-webkit-scrollbar-track { background-color: #efefef; }
 
@@ -99,6 +106,37 @@
 ::-webkit-scrollbar-thumb { background-color: #ccc; }
 
 /*
+    Css for menu-mobile
+*/
+.cz-handheld-toolbar {
+    background: url(../img/bg-header.png) no-repeat;
+    background-size: cover;
+}
+
+.cz-handheld-toolbar .header-logo-mb {
+    width: 55%;
+}
+
+.cz-handheld-toolbar-item {
+    border-left: 0;
+}
+
+.cz-handheld-toolbar-icon {
+    color: #fff;
+}
+
+.cz-handheld-toolbar-label {
+    color: #fff;
+}
+
+.cz-handheld-toolbar .box-avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 99px;
+    border: 2px solid #fff;
+}
+
+/*
     Css for header
 */
 .header-wrapper {
@@ -107,7 +145,7 @@
     background-size: cover;
 }
 
-.header-wrapper .header-nav-left img {
+.header-wrapper .header-nav-left .logo-kdol {
     display: block;
     margin: auto;
 }
@@ -1299,7 +1337,7 @@
     Css for single-product
 */
 .single-product {
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 .single-product .product-title {
@@ -1415,6 +1453,7 @@
 .single-product .product-footer .nav-item {
     width: 25%;
     text-align: center;
+    padding: 0 2px;
 }
 
 .single-product .product-footer .nav-tabs {
@@ -1463,16 +1502,31 @@
 
 .single-product .product-footer .description-tab .chapter-item {
     padding: 0 15px;
+    overflow: hidden;
 }
 
 .single-product .product-footer .description-tab .chapter-item.active {
-    padding: 10px 15px;
     background: #EEEEEE;
     border-radius: 6px;
+    border-bottom: 0;
 }
 
 .single-product .product-footer .description-tab .chapter-item .chapter-name {
-    min-width: 75%;
+    width: 70%;
+    float: left;
+    padding-right: 5px;
+}
+
+.single-product .product-footer .description-tab .chapter-item .chapter-status {
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+.single-product .product-footer .description-tab .chapter-item .chapter-time {
+    width: 15%;
+    float: left;
+    text-align: right;
 }
 
 .single-product .chapter-item .review-form-wrapper {
@@ -1494,6 +1548,19 @@
 
 .single-product .chapter-item .member-right {
     padding-top: 15px;
+}
+
+.single-product .description-tab .accordion .accordion-heading>a {
+    padding: .7rem 0 !important;
+}
+
+.single-product .description-tab .card {
+    border: 0;
+    padding-bottom: 5px;
+}
+
+.single-product .description-tab .card-body {
+    padding: 0;
 }
 
 /*
@@ -1647,7 +1714,7 @@
 }
 
 .related-products .box-img {
-    height: 150px;
+    height: 145px;
     overflow: hidden;
     border-radius: 8px;
     width: 100%;
@@ -1702,11 +1769,7 @@
 }
 
 .related-products .related-courses {
-    padding-bottom: 50px;
-}
-
-.related-products .related-posts {
-    padding-bottom: 30px;
+    padding: 10px 0 50px 0;
 }
 
 .post-item .box-img .card-img-top {
@@ -2131,6 +2194,22 @@
     header.box-shadow-sm {
         margin-top: 60px !important;
     }
+
+    .header-wrapper .header-nav-left .logo-kdol {
+        display: none;
+    }
+
+    .header-wrapper .contact-header {
+        display: none;
+    }
+
+    .template-header {
+        display: none;
+    }
+
+    .header-wrapper {
+        background: #010c79;
+    }
 }
 
 
@@ -2160,10 +2239,6 @@
         padding: 5px 0;
     }
 
-    .template-header {
-        display: none;
-    }
-
     .header-wrapper .contact-left {
         width: 100%;
         float: none;
@@ -2182,12 +2257,6 @@
     .header-wrapper .ct-email {
         text-align: center;
         margin-bottom: 5px;
-    }
-
-    .header-wrapper .header-nav-left img {
-        display: block;
-        margin: auto;
-        width: 35%;
     }
 
     .mega-menu-wrap {
@@ -2308,16 +2377,19 @@
         font-size: 20px;
     }
 
-    .related-products .box-img {
-        height: 190px;
-    }
-
     .related-products .related-courses {
         padding-bottom: 30px;
     }
 
     .related-products .related-posts {
         padding-bottom: 0;
+    }
+
+    .related-posts .box-img .card-img-top {
+        height: 145px;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: 8px;
     }
 
     .list-item-tc {
@@ -2406,6 +2478,11 @@
         font-size: 12px !important;
         color: #0046AF;
     }
+
+    .single-product .related-courses .product-title {
+        height: auto;
+    }
+    
 }
 
 
@@ -2545,5 +2622,29 @@
     .courses-online .product-item {
         padding-bottom: 15px;
         margin-bottom: 0px;
+    }
+
+    .single-product .product-footer .nav-item {
+        padding: 2px;
+    }
+
+    .single-product .product-footer .description-tab .chapter-item .chapter-name {
+        width: 60%;
+    }
+
+    .single-product .product-footer .description-tab .chapter-item .chapter-status {
+        width: 20%;
+    }
+
+    .single-product .product-footer .description-tab .chapter-item .chapter-time {
+        width: 20%;
+    }
+
+    .related-courses .d-flex {
+        display: flex !important;
+    }
+
+    .single-product .related-courses .product-title {
+        height: 25px;
     }
 }

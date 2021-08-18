@@ -133,7 +133,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 col-12 header-nav-left">
-            <a href="index.html" style="min-width: 7rem;"><img src="img/logo.png" alt="Cartzilla" /></a>
+            <a href="index.html" style="min-width: 7rem;"><img class="logo-kdol" src="img/logo.png" alt="Cartzilla" /></a>
           </div>
 
           <div class="col-lg-9 col-md-9 col-sm-12 col-12 header-nav-right">
@@ -562,65 +562,75 @@
                 <!-- Nội dung khóa học-->
                 <div class="tab-pane fade show" id="noi-dung" role="tabpanel">
                   <div class="description-tab">
-                      <div class="d-flex justify-content-between pb-2 chapter-item active">
-                        <div>
-                          <div class="font-weight-semibold text-dark text-bold"><i class="fa fa-minus-square" aria-hidden="true"></i> Phần 1: Khởi động</div>
+                    <div class="accordion" id="productPanels">
+                      <div class="card">
+                        <div class="card-header chapter-item active">
+                          <p class="h3 accordion-heading"><a href="#productInfo" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="productInfo"><i class="fa fa-minus-square" aria-hidden="true"></i> Phần 1: Khởi động</a></p>
+                        </div>
+                        <div class="collapse show" id="productInfo" data-parent="#productPanels">
+                          <div class="card-body font-size-sm">
+                            <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
+                              <div class="chapter-name">
+                                <div class="text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Giới thiệu chung về khóa học</div>
+                              </div>
+                              <div class="chapter-status"><a href="#">Học thử</a></div>
+                              <div class="chapter-time"><p style="margin-bottom: 0;">02:45</p></div>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
+                              <div class="chapter-name">
+                                <div class="text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 1</div>
+                              </div>
+                              <div class="chapter-status"><a href="#"></a></div>
+                              <div class="chapter-time"><p style="margin-bottom: 0;">02:45</p></div>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
+                              <div class="chapter-name">
+                                <div class="text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 2</div>
+                              </div>
+                              <div class="chapter-status"><a href="#"></a></div>
+                              <div class="chapter-time"><p style="margin-bottom: 0;">02:45</p></div>
+                            </div>
+                            <div class="d-flex justify-content-between py-2 chapter-item">
+                              <div class="chapter-name">
+                                <div class="text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 3</div>
+                              </div>
+                              <div class="chapter-status"><a href="#"></a></div>
+                              <div class="chapter-time"><p style="margin-bottom: 0;">02:45</p></div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
-                        <div class="chapter-name">
-                          <div class="font-size-sm text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Giới thiệu chung về khóa học</div>
+                      <div class="card">
+                        <div class="card-header chapter-item active">
+                          <p class="h3 accordion-heading"><a class="collapsed" href="#shippingOptions" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="shippingOptions"><i class="fa fa-minus-square" aria-hidden="true"></i> Phần 2: Tăng tốc</a></p>
                         </div>
-                        <div><a href="#">Học thử</a></div>
-                        <div><p style="margin-bottom: 0;">02:45</p></div>
-                      </div>
-                      <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
-                        <div class="chapter-name">
-                          <div class="font-size-sm text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 1</div>
-                        </div>
-                        <div><a href="#"></a></div>
-                        <div><p style="margin-bottom: 0;">02:45</p></div>
-                      </div>
-                      <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
-                        <div class="chapter-name">
-                          <div class="font-size-sm text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 2</div>
-                        </div>
-                        <div><a href="#"></a></div>
-                        <div><p style="margin-bottom: 0;">02:45</p></div>
-                      </div>
-                      <div class="d-flex justify-content-between py-2 chapter-item">
-                        <div class="chapter-name">
-                          <div class="font-size-sm text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 3</div>
-                        </div>
-                        <div><a href="#"></a></div>
-                        <div><p style="margin-bottom: 0;">02:45</p></div>
-                      </div>
-                      <div class="d-flex justify-content-between pb-2 chapter-item active">
-                        <div>
-                          <div class="font-weight-semibold text-dark text-bold"><i class="fa fa-minus-square" aria-hidden="true"></i> Phần 2: Tăng tốc</div>
+                        <div class="collapse" id="shippingOptions" data-parent="#productPanels">
+                          <div class="card-body font-size-sm">
+                            <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
+                              <div class="chapter-name">
+                                <div class="text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 4</div>
+                              </div>
+                              <div class="chapter-status"><a href="#">Học thử</a></div>
+                              <div class="chapter-time"><p style="margin-bottom: 0;">02:45</p></div>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
+                              <div class="chapter-name">
+                                <div class="text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 5</div>
+                              </div>
+                              <div class="chapter-status"><a href="#"></a></div>
+                              <div class="chapter-time"><p style="margin-bottom: 0;">02:45</p></div>
+                            </div>
+                            <div class="d-flex justify-content-between py-2 chapter-item">
+                              <div class="chapter-name">
+                                <div class="text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 6</div>
+                              </div>
+                              <div class="chapter-status"><a href="#"></a></div>
+                              <div class="chapter-time"><p style="margin-bottom: 0;">02:45</p></div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
-                        <div class="chapter-name">
-                          <div class="font-size-sm text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Giới thiệu chung về khóa học</div>
-                        </div>
-                        <div><a href="#">Học thử</a></div>
-                        <div><p style="margin-bottom: 0;">02:45</p></div>
-                      </div>
-                      <div class="d-flex justify-content-between border-bottom py-2 chapter-item">
-                        <div class="chapter-name">
-                          <div class="font-size-sm text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 4</div>
-                        </div>
-                        <div><a href="#"></a></div>
-                        <div><p style="margin-bottom: 0;">02:45</p></div>
-                      </div>
-                      <div class="d-flex justify-content-between py-2 chapter-item">
-                        <div class="chapter-name">
-                          <div class="font-size-sm text-muted"><i class="fa fa-play-circle" aria-hidden="true"></i> Bài 5</div>
-                        </div>
-                        <div><a href="#"></a></div>
-                        <div><p style="margin-bottom: 0;">02:45</p></div>
-                      </div>
+                    </div>
                   </div>
                 </div>
                 <!-- Thông tin giảng viên-->
@@ -829,6 +839,191 @@
               </div>
             </div>
           </div>
+
+          <!-- footer-product-->
+          <div class="related-products">
+
+            <!-- Khóa học liên quan-->
+            <div class="related-courses">
+              <p class="title-related-products">Khóa học liên quan</p>
+              <div class="cz-carousel cz-controls-static cz-controls-outside">
+                <div class="cz-carousel-inner"
+                  data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 15}}}">
+                  <!-- Item-->
+                  <div>
+                    <div class="card product-card card-static product-item">
+                      <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
+                      <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
+                          động</a>
+                        <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                        <div class="d-flex justify-content-between">
+                          <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                          <div class="star-rating">
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="card product-card card-static product-item">
+                      <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
+                      <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
+                          động</a>
+                        <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                        <div class="d-flex justify-content-between">
+                          <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                          <div class="star-rating">
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="card product-card card-static product-item">
+                      <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp4.png" alt="Product"></a>
+                      <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh
+                          Online</a>
+                        <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
+                        <div class="d-flex justify-content-between">
+                          <div class="product-price"><span class="text-accent-free">Free</span></div>
+                          <div class="star-rating">
+                            <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-heart-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="card product-card card-static product-item">
+                      <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
+                      <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
+                          động</a>
+                        <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                        <div class="d-flex justify-content-between">
+                          <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                          <div class="star-rating">
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="card product-card card-static product-item">
+                      <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
+                      <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
+                          động</a>
+                        <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
+                        <div class="d-flex justify-content-between">
+                          <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
+                          <div class="star-rating">
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart active"></i>
+                            <i class="fa fa-heart-o"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                </div>
+              </div>
+            </div>
+
+            <!-- Bài viết liên quan-->
+            <div class="related-posts">
+              <p class="title-related-products">Bài viết liên quan</p>
+              <div class="cz-carousel cz-controls-static cz-controls-outside">
+                <div class="cz-carousel-inner"
+                  data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 15}}}">
+                  <!-- Item-->
+                  <div>
+                    <div class="post-item">
+                      <div class="box-img">
+                        <a class="d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
+                      </div>
+                      <div class="box-text">
+                        <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="post-item">
+                      <div class="box-img">
+                        <a class="d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
+                      </div>
+                      <div class="box-text">
+                        <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="post-item">
+                      <div class="box-img">
+                        <a class="d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
+                      </div>
+                      <div class="box-text">
+                        <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="post-item">
+                      <div class="box-img">
+                        <a class="d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
+                      </div>
+                      <div class="box-text">
+                        <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div>
+                    <div class="post-item">
+                      <div class="box-img">
+                        <a class="d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
+                      </div>
+                      <div class="box-text">
+                        <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                </div>
+              </div>
+            </div>
+              
+            
+          </div>
+          <!-- Kết thúc footer-products-->
+
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 sidebar">
           <div class="add-to-cart">
@@ -862,192 +1057,6 @@
     </div>
   </div>
   <!-- Kết thúc single-product-->
-
-  <!-- footer-product-->
-  <div class="related-products">
-    <div class="container">
-
-      <!-- Khóa học liên quan-->
-      <div class="related-courses">
-        <p class="title-related-products">Khóa học liên quan</p>
-        <div class="cz-carousel cz-controls-static cz-controls-outside">
-          <div class="cz-carousel-inner"
-            data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
-            <!-- Item-->
-            <div>
-              <div class="card product-card card-static product-item">
-                <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
-                <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
-                    động</a>
-                  <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
-                  <div class="d-flex justify-content-between">
-                    <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
-                    <div class="star-rating">
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart-o"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="card product-card card-static product-item">
-                <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
-                <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
-                    động</a>
-                  <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
-                  <div class="d-flex justify-content-between">
-                    <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
-                    <div class="star-rating">
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart-o"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="card product-card card-static product-item">
-                <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp4.png" alt="Product"></a>
-                <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Bản đồ kinh doanh
-                    Online</a>
-                  <p class="product-title font-size-sm"><a href="#">Học viện kinh doanh online</a></p>
-                  <div class="d-flex justify-content-between">
-                    <div class="product-price"><span class="text-accent-free">Free</span></div>
-                    <div class="star-rating">
-                      <i class="fa fa-heart-o"></i>
-                      <i class="fa fa-heart-o"></i>
-                      <i class="fa fa-heart-o"></i>
-                      <i class="fa fa-heart-o"></i>
-                      <i class="fa fa-heart-o"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="card product-card card-static product-item">
-                <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
-                <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
-                    động</a>
-                  <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
-                  <div class="d-flex justify-content-between">
-                    <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
-                    <div class="star-rating">
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart-o"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="card product-card card-static product-item">
-                <a class="box-img d-block overflow-hidden" href="#"><img src="./img/sp1.png" alt="Product"></a>
-                <div class="box-text"><a class="product-meta d-block font-size-xs pb-1" href="#">Xây dựng hệ thống tự
-                    động</a>
-                  <p class="product-title font-size-sm"><a href="#">Nguyễn thị Việt Phương</a></p>
-                  <div class="d-flex justify-content-between">
-                    <div class="product-price"><span class="text-accent">1.200.000<small>đ</small></span></div>
-                    <div class="star-rating">
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart active"></i>
-                      <i class="fa fa-heart-o"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-          </div>
-        </div>
-      </div>
-
-      <!-- Bài viết liên quan-->
-      <div class="related-posts">
-        <p class="title-related-products">Bài viết liên quan</p>
-        <div class="cz-carousel cz-controls-static cz-controls-outside">
-          <div class="cz-carousel-inner"
-            data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: true, &quot;nav&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;items&quot;:4, &quot;gutter&quot;: 30}}}">
-            <!-- Item-->
-            <div>
-              <div class="post-item">
-                <div class="box-img">
-                  <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
-                </div>
-                <div class="box-text">
-                  <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="post-item">
-                <div class="box-img">
-                  <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
-                </div>
-                <div class="box-text">
-                  <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="post-item">
-                <div class="box-img">
-                  <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
-                </div>
-                <div class="box-text">
-                  <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="post-item">
-                <div class="box-img">
-                  <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
-                </div>
-                <div class="box-text">
-                  <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-            <div>
-              <div class="post-item">
-                <div class="box-img">
-                  <a class="card-img-top d-block overflow-hidden" href="#"><img src="./img/post1.png" alt="Post"></a>
-                </div>
-                <div class="box-text">
-                  <p class="post-title"><a href="#">Ma trận đa kênh trong thu hút khách hàng</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Item-->
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    
-  </div>
-  <!-- Kết thúc footer-products-->
 
   <!-- Footer-->
   <footer class="bg-light pt-5">
@@ -1179,15 +1188,24 @@
   </footer>
   <!-- Toolbar for handheld devices-->
   <div class="cz-handheld-toolbar">
-    <div class="d-table table-fixed w-100"><a class="d-table-cell cz-handheld-toolbar-item"
-        href="account-wishlist.html"><span class="cz-handheld-toolbar-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span><span
-          class="cz-handheld-toolbar-label">Đăng ký học</span></a><a class="d-table-cell cz-handheld-toolbar-item"
-        href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)"><span
-          class="cz-handheld-toolbar-icon"><i class="czi-menu"></i></span><span
-          class="cz-handheld-toolbar-label">Menu</span></a><a class="d-table-cell cz-handheld-toolbar-item"
-        href="shop-cart.html"><span class="cz-handheld-toolbar-icon"><i class="czi-cart"></i><span
-            class="badge badge-primary badge-pill ml-1">4</span></span><span
-          class="cz-handheld-toolbar-label">Giỏ hàng</span></a>
+    <div class="d-table table-fixed w-100">
+
+      <a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)">
+        <span class="cz-handheld-toolbar-icon"><i class="czi-menu"></i></span>
+      </a>
+      
+      <a class="d-table-cell cz-handheld-toolbar-item" href="index.html">
+        <img class="header-logo-mb" src="./img/logo.png" alt="">
+      </a>
+
+      <a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)">
+        <span class="cz-handheld-toolbar-icon">
+          <div class="box-avatar">
+            <img class="width-100" src="./img/tk.png" alt="">
+          </div>
+        </span>
+      </a>
+
     </div>
   </div>
   <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span
