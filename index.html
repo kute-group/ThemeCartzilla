@@ -88,21 +88,26 @@
               <div class="col-lg-4 col-md-4 col-sm-6 col-6">
 
                 <!-- Login-->
-                <div class="login">
+                <!-- <div class="login">
                   <a href="#" class="btn button-signup" style="border-radius:4px;"><span>Đăng ký</span></a>
                   <a href="#" class="btn button-signin" style="border-radius:4px;"><span>Đăng nhập</span></a>
-                </div>
+                </div> -->
 
                 <!-- Logged-->
-                <!-- <div class="logged">
+                <div class="logged">
                   <div class="box-avatar">
                     <img class="width-100" src="./img/tk.png" alt="">
                   </div>
-                  <div class="box-name">
+                  <div class="box-name box-name-logged">
                     <p class="messenger">Xin chào</p>
-                    <p class="user-name">Thắng Trần</p>
+                    <a class="user-controll user-name" href="#">Thắng Trần <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="widget-list user-menu">
+                      <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-share" aria-hidden="true"></i> Vào học</a></li>
+                      <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Thông tin tài khoản</a></li>
+                      <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a></li>
+                    </ul>
                   </div>
-                </div> -->
+                </div>
                 
               </div>
             </div>
@@ -1539,10 +1544,19 @@
         <img class="header-logo-mb" src="./img/logo.png" alt="">
       </a>
 
-      <a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)">
+      <a class="d-table-cell cz-handheld-toolbar-item button-search" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)">
         <span class="cz-handheld-toolbar-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
       </a>
 
+      <div class="box-avatar user-menu-mobile">
+        <a class="img-controll" href="#"><img class="width-100" src="./img/tk.png" alt=""></a>
+        <ul class="widget-list list-user-menu-mobile">
+          <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-share" aria-hidden="true"></i> Vào học</a></li>
+          <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Thông tin tài khoản</a></li>
+          <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a></li>
+        </ul>
+      </div>
+      
     </div>
   </div>
   <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span

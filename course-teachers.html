@@ -50,82 +50,6 @@
 <!-- Body-->
 
 <body class="toolbar-enabled">
-  <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <ul class="nav nav-tabs card-header-tabs" role="tablist">
-            <li class="nav-item"><a class="nav-link active" href="#signin-tab" data-toggle="tab" role="tab"
-                aria-selected="true"><i class="czi-unlocked mr-2 mt-n1"></i>Sign in</a></li>
-            <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab"
-                aria-selected="false"><i class="czi-user mr-2 mt-n1"></i>Sign up</a></li>
-          </ul>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-              aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body tab-content py-4">
-          <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
-            <div class="form-group">
-              <label for="si-email">Email address</label>
-              <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
-              <div class="invalid-feedback">Please provide a valid email address.</div>
-            </div>
-            <div class="form-group">
-              <label for="si-password">Password</label>
-              <div class="password-toggle">
-                <input class="form-control" type="password" id="si-password" required>
-                <label class="password-toggle-btn">
-                  <input class="custom-control-input" type="checkbox"><i
-                    class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                </label>
-              </div>
-            </div>
-            <div class="form-group d-flex flex-wrap justify-content-between">
-              <div class="custom-control custom-checkbox mb-2">
-                <input class="custom-control-input" type="checkbox" id="si-remember">
-                <label class="custom-control-label" for="si-remember">Remember me</label>
-              </div><a class="font-size-sm" href="#">Forgot password?</a>
-            </div>
-            <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign in</button>
-          </form>
-          <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
-            <div class="form-group">
-              <label for="su-name">Full name</label>
-              <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
-              <div class="invalid-feedback">Please fill in your name.</div>
-            </div>
-            <div class="form-group">
-              <label for="su-email">Email address</label>
-              <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
-              <div class="invalid-feedback">Please provide a valid email address.</div>
-            </div>
-            <div class="form-group">
-              <label for="su-password">Password</label>
-              <div class="password-toggle">
-                <input class="form-control" type="password" id="su-password" required>
-                <label class="password-toggle-btn">
-                  <input class="custom-control-input" type="checkbox"><i
-                    class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                </label>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="su-password-confirm">Confirm password</label>
-              <div class="password-toggle">
-                <input class="form-control" type="password" id="su-password-confirm" required>
-                <label class="password-toggle-btn">
-                  <input class="custom-control-input" type="checkbox"><i
-                    class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                </label>
-              </div>
-            </div>
-            <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign up</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Navbar-->
   <!-- Navbar 3 Level (Light)-->
   <header class="box-shadow-sm">
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
@@ -154,9 +78,9 @@
                   <input class="form-control appended-form-control" type="text" placeholder="Tìm kiếm">
                   <select class="search-category">
                     <option value="volvo">Danh mục tìm kiếm</option>
-                    <option value="saab">Xây dựng thương hiệu</option>
-                    <option value="opel">Xây dựng hệ thống website</option>
-                    <option value="audi">Xây dựng hệ thống chat bot</option>
+                    <option value="saab">Kiến thức kinh doanh</option>
+                    <option value="opel">Thông tin thi trường</option>
+                    <option value="audi">Cộng đồng kinh doanh</option>
                   </select>
                   <button class="button-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
@@ -164,21 +88,26 @@
               <div class="col-lg-4 col-md-4 col-sm-6 col-6">
 
                 <!-- Login-->
-                <div class="login">
+                <!-- <div class="login">
                   <a href="#" class="btn button-signup" style="border-radius:4px;"><span>Đăng ký</span></a>
                   <a href="#" class="btn button-signin" style="border-radius:4px;"><span>Đăng nhập</span></a>
-                </div>
+                </div> -->
 
                 <!-- Logged-->
-                <!-- <div class="logged">
+                <div class="logged">
                   <div class="box-avatar">
-                    <img src="./img/tk.png" alt="">
+                    <img class="width-100" src="./img/tk.png" alt="">
                   </div>
-                  <div class="box-name">
+                  <div class="box-name box-name-logged">
                     <p class="messenger">Xin chào</p>
-                    <p class="user-name">Thắng Trần</p>
+                    <a class="user-controll user-name" href="#">Thắng Trần <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="widget-list user-menu">
+                      <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-share" aria-hidden="true"></i> Vào học</a></li>
+                      <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Thông tin tài khoản</a></li>
+                      <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a></li>
+                    </ul>
                   </div>
-                </div> -->
+                </div>
                 
               </div>
             </div>
@@ -420,7 +349,7 @@
               <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#"
                   data-toggle="dropdown">Giới thiệu</a>
               </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="course-list.html" data-toggle="dropdown">Khóa
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/course-list.html" data-toggle="dropdown">Khóa
                   học</a>
                 <div class="dropdown-menu p-0">
                   <div class="d-flex flex-wrap flex-md-nowrap px-2">
@@ -930,10 +859,19 @@
         <img class="header-logo-mb" src="./img/logo.png" alt="">
       </a>
 
-      <a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)">
+      <a class="d-table-cell cz-handheld-toolbar-item button-search" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)">
         <span class="cz-handheld-toolbar-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
       </a>
 
+      <div class="box-avatar user-menu-mobile">
+        <a class="img-controll" href="#"><img class="width-100" src="./img/tk.png" alt=""></a>
+        <ul class="widget-list list-user-menu-mobile">
+          <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-share" aria-hidden="true"></i> Vào học</a></li>
+          <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Thông tin tài khoản</a></li>
+          <li class="widget-list-item"><a class="widget-list-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a></li>
+        </ul>
+      </div>
+      
     </div>
   </div>
   <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span

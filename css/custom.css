@@ -134,10 +134,22 @@
 }
 
 .cz-handheld-toolbar .box-avatar img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 99px;
     border: 2px solid #fff;
+}
+
+.cz-handheld-toolbar .d-table-cell {
+    width: 30%;
+}
+
+.cz-handheld-toolbar .d-table-cell:first-child {
+    text-align: left;
+}
+
+.cz-handheld-toolbar .button-search {
+    text-align: right;
 }
 
 /*
@@ -415,7 +427,6 @@
     Css for logged
 */
 .logged {
-    overflow: hidden;
     margin-top: -15px;
     float: right;
 }
@@ -449,6 +460,29 @@
     line-height: 21px;
     color: #FFFFFF;
     margin-bottom: 0;
+}
+
+.logged .box-name-logged {
+    position: relative;
+}
+
+.logged .user-controll:hover {
+    color: #FFFC01 !important;
+}
+
+.logged .box-name-logged:hover .user-menu{
+    display: block;
+    z-index: 9999;
+}
+
+.logged .user-menu {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    position: absolute;
+    display: none;
+    min-width: 170px;
+    box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.06);
 }
 
 /*
@@ -2233,6 +2267,49 @@
     .login-mobile {
         display: block;
     }
+
+    /*
+        Css for user-menu-mobile
+    */
+    .user-menu-mobile {
+
+    } 
+
+    .user-menu-mobile .img-controll {
+        position: relative;
+    }
+
+    .user-menu-mobile:hover .list-user-menu-mobile{
+        display: block;
+    } 
+
+    .user-menu-mobile .list-user-menu-mobile {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 12px 4px rgb(0 0 0 / 6%);;
+        position: absolute;
+        display: none;
+        width: 90%;
+        left: 5px;
+        right: 5px;
+        margin: auto;
+        top: 70px;
+    }
+
+    .user-menu-mobile .widget-list-link{
+        border: 1px solid #EEEEEE;
+        border-radius: 6px;
+        padding: 10px 5px;
+        text-align: center;
+        background: #fff;
+        color: #666666;
+    }
+
+    .user-menu-mobile .widget-list-link:hover{
+        background: #0046AF;
+        color: #fff;
+    }
 }
 
 
@@ -2506,6 +2583,12 @@
         height: auto;
     }
     
+    .scroll-sidebar {
+        position: relative !important;
+        top: auto;
+        right: auto;
+        left: auto;
+    }
 }
 
 
