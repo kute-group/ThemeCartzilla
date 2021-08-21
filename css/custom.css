@@ -113,7 +113,7 @@
     Css for menu-mobile
 */
 .cz-handheld-toolbar {
-    background: url(../img/bg-header.png) no-repeat;
+    background: url(../img/bg-header.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -157,7 +157,7 @@
 */
 .header-wrapper {
     background-color: none !important;
-    background: url(../img/bg-header.png) no-repeat; 
+    background: url(../img/bg-header.jpg) no-repeat; 
     background-size: cover;
 }
 
@@ -919,7 +919,7 @@
     Css for blog-learn
 */
 .blog-learn {
-    background: url(../img/bg-blog.png) no-repeat;
+    background: url(../img/bg-blog.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 50px !important
@@ -1130,7 +1130,7 @@
     Css for main-footer
 */
 .main-footer{
-    background: url(../img/bg-ft.png) no-repeat;
+    background: url(../img/bg-ft.jpg) no-repeat;
     background-size: cover;
 }
 
